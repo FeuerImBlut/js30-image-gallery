@@ -3,22 +3,86 @@
     padding: 0;
 }
 
-.container {
-    width: 1440px;
-    margin: 0 auto;
+body {
+    background-color: darkslategrey;
+}
 
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .gallery {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: violet 3px solid;
     justify-content: space-between;
     row-gap: 20px;
 }
 
 .image {
     display: block;
-    width: 350px;
+    max-width: 450px;
+    min-width: 200px;
+}
+
+header {
+    padding: 20px;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.search {
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.30s ease-in-out;
+    border: 1px solid #DDDDDD;
+}
+
+.logo {
+    display: block;
+    height: 50px;
+    width: 300px;
+    background-image: url(assets/svg/Unsplash_Logo_Full.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer {
+    font-family: Inter;
+    font-size: 20px;
+    max-width: 1440px;
+    color: white;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+    font: inherit;
+    transition: ease-in 0.3s;
+}
+
+.github {
+    margin-right: auto;
+    padding-left: 10px;
 }
