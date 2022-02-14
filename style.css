@@ -47,6 +47,14 @@ header > .container {
     border: 1px solid #DDDDDD;
 }
 
+
+
+.search-block {
+    position: relative;
+}
+
+
+
 .logo {
     display: block;
     height: 50px;
