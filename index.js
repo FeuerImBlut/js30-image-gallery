@@ -1,5 +1,6 @@
 const gallery = document.querySelector('.gallery');
 const searchInput = document.querySelector('.search');
+const searchButton = document.querySelector('.search-button');
 
 async function getData(tag) {
     const url = `https://api.unsplash.com/search/photos?query=${tag}&per_page=30&page=1&orientation=landscape&tag_mode=all&client_id=oaTV7VkY1wzRWhRRCry0x9U_Zjboux8v7ef17iOSnH0`;
@@ -36,6 +37,10 @@ searchInput.addEventListener('keydown', (event) => {
     getImages(searchInput.value).then(fillGallery);
     }
 })
+
+searchButton.addEventListener('click', () => {
+    getImages(searchInput.value).then(fillGallery);
+});
 
 
 

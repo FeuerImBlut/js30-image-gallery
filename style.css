@@ -38,7 +38,7 @@ header > .container {
 
 .search {
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
     font-size: 1rem;
     padding: 8px 12px;
     border-radius: 25px;
@@ -47,10 +47,32 @@ header > .container {
     border: 1px solid #DDDDDD;
 }
 
+.search::-webkit-search-cancel-button {
+    margin-right: 15%;
+    cursor: pointer;
+}
 
+.search-button {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(assets/svg/Search_Icon.svg);
+    background-size: contain;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.search-button:hover {
+    filter: invert(44%) sepia(97%) saturate(1926%) hue-rotate(162deg) brightness(96%) contrast(101%);
+}
 
 .search-block {
     position: relative;
+    display: flex;
+    width: 300px;
+    align-items: center;
 }
 
 
