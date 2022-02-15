@@ -116,3 +116,11 @@ a {
     margin-right: auto;
     padding-left: 10px;
 }
+
+.rs-logo {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-image: url(assets/svg/logo-rs.svg);
+    background-repeat: no-repeat;
+}
